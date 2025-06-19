@@ -57,6 +57,7 @@ Since these characteristics were not present in the model's training data, YOLOv
 
 
 
+
 ---
 
 ## 🧠 Model Details
