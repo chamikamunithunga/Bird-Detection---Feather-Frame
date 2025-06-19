@@ -42,11 +42,10 @@ Occlusions and background noise
 
 Since these characteristics were not present in the model's training data, YOLOv8 struggles to generalize to such inputs, resulting in low confidence scores or complete misdetection.
 
+<img width="1439" alt="Screenshot 2025-06-19 at 3 22 58 PM" src="https://github.com/user-attachments/assets/c3a76c4a-8c9e-43c2-aa4f-10cc755aee57" />
 
 
-
-
-
+<img width="1439" alt="Screenshot 2025-06-19 at 3 24 33 PM" src="https://github.com/user-attachments/assets/f5489ef8-127d-4959-8a39-4e83ec000422" />
 
 
 
@@ -57,6 +56,10 @@ Since these characteristics were not present in the model's training data, YOLOv
 - 🌐 CORS-enabled Flask backend for frontend integration
 - 🧠 Supports `.pt` custom or pre-trained YOLOv8 models
 - 🧪 Easily extendable for more species or multi-object detection
+
+
+
+
 
 ---
 
