@@ -9,36 +9,32 @@ BirdScanAI is a powerful AI-powered bird detection system that uses the YOLOv8 d
 
 In the BirdScanAI system, the YOLOv8 (You Only Look Once, version 8) model is used for detecting birds in images. While it is one of the most powerful real-time object detection models, its performance depends significantly on the type and quality of input data.
 
-✅ 1. YOLOv8 is Trained on Real-World Datasets
-YOLOv8, like its predecessors, is primarily trained on natural image datasets such as:
-
-COCO (Common Objects in Context)
-
-ImageNet
-
-Open Images
-
-These datasets consist of real-world photographs, meaning the model has learned to identify patterns, textures, shadows, and environmental cues that naturally occur in photographed birds, not artificially created ones.
 
 
-Animated or Artificial Images Lack Real-World Features
-Animated or artificially rendered images — such as:
+🧠 Model Input Requirements: Real vs. Animated Images
+The BirdScanAI system utilizes the YOLOv8 (You Only Look Once) deep learning model to detect birds in user-submitted images. While the model is highly effective with real-world photographs, it is not optimized for animated or artificially rendered images (e.g., cartoons, vector graphics, or CGI birds). Below is a technical explanation of this limitation:
 
-Cartoon birds
+✅ Why YOLOv8 Excels with Real Images
+Training Domain: YOLOv8 is trained on large-scale datasets such as COCO and ImageNet, which consist of photographic images taken in natural environments.
 
-Vector illustrations
+Feature Learning: The model learns complex visual features like feather textures, natural lighting, background noise, and shape variations from real-world images.
 
-CGI-generated birds
+High Confidence Detection: When tested on real images, the model can confidently localize and classify birds with high accuracy.
 
-— often lack the pixel-level realism such as:
+❌ Why Animated Images Perform Poorly
+Lack of Realistic Features: Animated images lack essential real-world cues such as shadow gradients, depth, and texture details that the model expects.
 
-Natural lighting and shadow variations
+Domain Gap: This is a classic domain shift problem, where the testing data (animated birds) differs significantly from the training data (real birds). As a result, the model fails to generalize, often producing low confidence scores or false negatives.
 
-Complex feather textures
+🔬 Theoretical Insight: Domain Shift
+Deep learning models are highly dependent on the visual distribution of the data they were trained on. If the input distribution changes significantly (from realistic to synthetic), model performance degrades due to what is known as domain gap.
 
-Realistic color gradations
+💡 Best Practice
+To ensure optimal detection results:
 
-Occlusions and background noise
+✅ Use realistic, high-quality bird photographs taken with cameras or phones.
+
+❌ Avoid using cartoons, illustrations, or heavily edited images unless the model is fine-tuned for such inputs.
 
 Since these characteristics were not present in the model's training data, YOLOv8 struggles to generalize to such inputs, resulting in low confidence scores or complete misdetection.
 
