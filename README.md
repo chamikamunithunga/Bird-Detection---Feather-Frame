@@ -7,6 +7,45 @@ BirdScanAI is a powerful AI-powered bird detection system that uses the YOLOv8 d
 
 <img width="1435" alt="Screenshot 2025-06-19 at 3 20 59 PM" src="https://github.com/user-attachments/assets/03d44e6b-1a43-42e1-bab2-3e4c2f147e44" />
 
+In the BirdScanAI system, the YOLOv8 (You Only Look Once, version 8) model is used for detecting birds in images. While it is one of the most powerful real-time object detection models, its performance depends significantly on the type and quality of input data.
+
+✅ 1. YOLOv8 is Trained on Real-World Datasets
+YOLOv8, like its predecessors, is primarily trained on natural image datasets such as:
+
+COCO (Common Objects in Context)
+
+ImageNet
+
+Open Images
+
+These datasets consist of real-world photographs, meaning the model has learned to identify patterns, textures, shadows, and environmental cues that naturally occur in photographed birds, not artificially created ones.
+
+
+Animated or Artificial Images Lack Real-World Features
+Animated or artificially rendered images — such as:
+
+Cartoon birds
+
+Vector illustrations
+
+CGI-generated birds
+
+— often lack the pixel-level realism such as:
+
+Natural lighting and shadow variations
+
+Complex feather textures
+
+Realistic color gradations
+
+Occlusions and background noise
+
+Since these characteristics were not present in the model's training data, YOLOv8 struggles to generalize to such inputs, resulting in low confidence scores or complete misdetection.
+
+
+
+
+
 
 
 
